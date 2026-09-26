@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
     <groupId>resolvingarchitecture</groupId>
-	<artifactId>http-client</artifactId>
+	<artifactId>http</artifactId>
 	<version>1.2.0</version>
 
 	<packaging>jar</packaging>
 
-	<name>ra-http-client</name>
+	<name>ra-http</name>
 	<url>https://resolvingarchitecture.io</url>
 	<description>Resolving Architecture - HTTP(S)ad Client</description>
 	<inceptionYear>2017</inceptionYear>
