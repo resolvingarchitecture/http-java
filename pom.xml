@@ -20,9 +20,9 @@
 	</properties>
 
 	<scm>
-		<connection>scm:git@github.com/resolvingarchitecture/http-client-java</connection>
-		<developerConnection>scm:git@github.com/resolvingarchitecture/http-client-java</developerConnection>
-		<url>git@github.com/resolvingarchitecture/http-client-java</url>
+		<connection>scm:git@github.com/resolvingarchitecture/http-java</connection>
+		<developerConnection>scm:git@github.com/resolvingarchitecture/http-java</developerConnection>
+		<url>git@github.com/resolvingarchitecture/http-java</url>
 	</scm>
 
 	<repositories>
