@@ -52,6 +52,43 @@
             <version>9.4.30.v20200611</version>
         </dependency>
 
+        <!-- Pinned explicitly: without these, a consumer that imports Spring Boot's
+             dependencyManagement BOM (which manages Jetty at 12.x) silently upgrades these
+             four transitive jars to 12.x while jetty-server/websocket-server above stay at
+             9.4.30, producing a broken hybrid stack (9.4's Server API calling into 12.x's
+             jetty-util, which removed org.eclipse.jetty.util.log.Log -> NoClassDefFoundError
+             at runtime, only inside the Jetty codepath, easy to miss until it's actually hit). -->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-http</artifactId>
+            <version>9.4.30.v20200611</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-io</artifactId>
+            <version>9.4.30.v20200611</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-util</artifactId>
+            <version>9.4.30.v20200611</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-security</artifactId>
+            <version>9.4.30.v20200611</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-client</artifactId>
+            <version>9.4.30.v20200611</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-xml</artifactId>
+            <version>9.4.30.v20200611</version>
+        </dependency>
+
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>okhttp</artifactId>
