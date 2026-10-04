@@ -52,7 +52,7 @@ public class HTTPServiceTest {
     public void httpClientTest() {
         Envelope envelope = Envelope.documentFactory();
         try {
-            envelope.setURL(new URL("http://resolvingarchitecture.io"));
+            envelope.setURL(new URL("http://resolvingarchitecture.dev"));
         } catch (MalformedURLException e) {
             LOG.severe(e.getLocalizedMessage());
             Assert.fail();
@@ -69,7 +69,7 @@ public class HTTPServiceTest {
     public void httpsClientTest() {
         Envelope envelope = Envelope.documentFactory();
         try {
-            envelope.setURL(new URL("https://resolvingarchitecture.io"));
+            envelope.setURL(new URL("https://resolvingarchitecture.dev"));
         } catch (MalformedURLException e) {
             LOG.severe(e.getLocalizedMessage());
             Assert.fail();
